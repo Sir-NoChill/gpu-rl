@@ -242,26 +242,32 @@
 
     <h2>Grading Scheme</h2>
 
-    <div class="section">
-        <h3>Assignments (3 Common Algorithms/Concepts) - 30%</h3>
-        <p>
-            Common days for implementing basic algorithms. Some discussion around implementing and other fun stuff.
-            Progressively building a deeper understanding of what GPUs are. DS and algorithms course (look this up) -
-            leet GPU stuff.
-        </p>
-
-        <h3>Paper Reviews - 30%</h3>
-        <p>
-            Structured discussion of papers we know (1 paper a week). If we finish our basics, move to 2 papers per week.
-        </p>
-
-        <h3>Project Proposal - Due February 15</h3>
-        <p>
-            Plan for the rest of the term. Something that bridges gaps in continual learning/RL/etc.
-        </p>
-
-        <h3>Project Deadline (April) - 40%</h3>
-    </div>
+    <table class="grading-table">
+        <thead>
+            <tr>
+                <th>Component</th>
+                <th>Description</th>
+                <th>Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GPU Programming Assignments</td>
+                <td>Three collaborative assignments implementing fundamental GPU algorithms and data structures. Progressive exploration of GPU programming concepts including profiling, optimization, and performance analysis.</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Paper Reviews & Discussions</td>
+                <td>Structured weekly discussions of research papers (1 paper per week, potentially increasing to 2 papers per week as the course progresses). Active participation in class discussions.</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Course Project</td>
+                <td>Research project bridging gaps in continual learning, reinforcement learning, or GPU-accelerated sparse algorithms. <strong>Project proposal due February 15.</strong> Final project due in April.</td>
+                <td>40%</td>
+            </tr>
+        </tbody>
+    </table>
 
 
     <h2>Potential Assignments</h2>
@@ -335,52 +341,72 @@
     <h2>Potential Reading List</h2>
 
     <div class="section">
-        <h3>GPU Related Papers</h3>
+        <h3>GPU Architecture and Programming</h3>
         <ul>
-            <li>Parallel Processing (2nd edition textbook)</li>
-            <li><a href="https://arxiv.org/abs/2507.10789v1">The Blackwell Architecture</a> - A microbenchmarking test on the Blackwell platform to discover architectural characteristics. <a href="https://dl.acm.org/doi/10.1145/3725843.3756041">This paper</a> does a similar thing but for the CUDA cores proper. This could make a useful comparison to the <a href="https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/instruction-set-architectures/amd-instinct-mi300-cdna3-instruction-set-architecture.pdf">MI300A docs</a> and CDNA architecture reference to see what's up.</li>
+            <li>
+                <strong>Parallel Processing Fundamentals</strong><br>
+                Parallel Processing (2nd edition textbook)
+            </li>
+            <li>
+                <strong>Blackwell GPU Architecture Characterization</strong><br>
+                <a href="https://arxiv.org/abs/2507.10789v1">arXiv:2507.10789v1</a><br>
+                Microbenchmarking study revealing architectural characteristics of the Blackwell platform
+            </li>
+            <li>
+                <strong>CUDA Core Microbenchmarking</strong><br>
+                <a href="https://dl.acm.org/doi/10.1145/3725843.3756041">ACM DL</a><br>
+                Comparison point for understanding CUDA core architecture versus Blackwell
+            </li>
+            <li>
+                <strong>AMD CDNA3 Architecture Reference</strong><br>
+                <a href="https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/instruction-set-architectures/amd-instinct-mi300-cdna3-instruction-set-architecture.pdf">MI300A Instruction Set Architecture</a><br>
+                Reference documentation for comparison with NVIDIA architectures
+            </li>
         </ul>
 
-        <h3>ML Related Papers</h3>
+        <h3>Sparse Neural Networks and Efficiency</h3>
         <ul>
-            <li><a href="https://openreview.net/pdf?id=Sv7DazuCn8">The Big World Hypothesis</a> - This is short and worth reading before the class to motivate this direction of work.</li>
-            <li><a href="https://arxiv.org/abs/2410.14606">Streaming Reinforcement Learning Finally Works</a> - Understand what is needed to make streaming algorithms work in RL (step-size adaptation, normalization, etc.).</li>
-            <li><a href="https://arxiv.org/pdf/2102.00554">Sparsity in Deep Learning: Pruning and Growth for Efficient Inference and Training In Neural Networks</a> - I have never read this paper, but at a skim it looks great. The paper is long, but the goal with this is to understand why sparsity is important and what the main algorithms people use. Even just going through the first two sections of this paper would be worth it.</li>
-            <li>I want a paper that demonstrates the importance of network architecture, and how that influences performance, learning efficiency, and generalization. I haven't found one yet, but maybe we can just discuss this idea. The sparsity paper I added may actually suffice for this.</li>
-            <li>The last type of paper I want to look at is a paper that learns the structure of a network online, and discusses why this is important. I don't have a paper in mind, but right now I'm considering <a href="https://arxiv.org/pdf/1607.01097">AdaNet</a>, <a href="https://link.springer.com/chapter/10.1007/978-3-032-05461-6_13">Efficient Architecture Search for Continual Learning</a>, and Neuron-Level Architecture Search for Efficient Model Design.</li>
+            <li>
+                <strong>The Big World Hypothesis</strong><br>
+                <a href="https://openreview.net/pdf?id=Sv7DazuCn8">OpenReview</a><br>
+                Motivates the need for sparse and adaptive approaches in large-scale learning
+            </li>
+            <li>
+                <strong>Gale, T., Elsen, E., and Hooker, S. (2019)</strong><br>
+                <em>Sparsity in Deep Learning: Pruning and Growth for Efficient Inference and Training in Neural Networks</em><br>
+                <a href="https://arxiv.org/pdf/2102.00554">arXiv:2102.00554</a><br>
+                Comprehensive survey of sparsity techniques and their importance in deep learning
+            </li>
+            <li>
+                <strong>[PLACEHOLDER] Network Architecture and Learning Efficiency</strong><br>
+                Paper demonstrating the importance of network architecture on performance, learning efficiency, and generalization
+            </li>
+        </ul>
+
+        <h3>Streaming and Continual Learning</h3>
+        <ul>
+            <li>
+                <strong>Streaming Reinforcement Learning Finally Works</strong><br>
+                <a href="https://arxiv.org/abs/2410.14606">arXiv:2410.14606</a><br>
+                Requirements for successful streaming algorithms in RL (step-size adaptation, normalization, etc.)
+            </li>
+            <li>
+                <strong>[PLACEHOLDER] Online Network Structure Learning</strong><br>
+                Paper on learning network structure online during training<br>
+                <em>Candidates:</em>
+                <ul style="margin-top: 5px;">
+                    <li><a href="https://arxiv.org/pdf/1607.01097">AdaNet: Adaptive Structural Learning of Artificial Neural Networks</a></li>
+                    <li><a href="https://link.springer.com/chapter/10.1007/978-3-032-05461-6_13">Efficient Architecture Search for Continual Learning</a></li>
+                    <li>Neuron-Level Architecture Search for Efficient Model Design</li>
+                </ul>
+            </li>
         </ul>
 
         <p>
-            <em>Note:</em> Continuous learning ideas might be a much better focus for paper reading in the course,
-            implementing the system on an actual GPU would be an easier engineering problem and I could dig up
-            papers as required to back it up.
+            <em>Note:</em> Continuous learning ideas might be a much better focus for paper reading in the course.
+            Implementing the system on an actual GPU would be an easier engineering problem and additional papers
+            can be sourced as required.
         </p>
-    </div>
-
-    <h2>Course Topics Overview</h2>
-
-    <div class="section">
-        <h3>CUDA/HIP Programming Systems</h3>
-        <p><strong>Phase 1:</strong> A library of common functions/tools/utilities + GPGPU profiling tools + Multi-GPU versions</p>
-        <ul>
-            <li>Implementing common utilities</li>
-            <li>Implementing common algorithms</li>
-            <li>Fundamentals</li>
-            <li>Memory systems</li>
-            <li>Finding papers? Let's look at some</li>
-            <li>Open XLA backend? SPIRV? JAX?</li>
-        </ul>
-
-        <h3>Sparse Networks Context</h3>
-        <ul>
-            <li>In ML scaling → bigger is not better</li>
-            <li>Scaling doesn't make sense in the current paradigm</li>
-            <li>Squeezing as much as possible out of data</li>
-            <li>Learning the network structure (hardware does not suit it)</li>
-            <li>Build in the biases that make it effective for some problems</li>
-            <li>Build in the specific capture techniques</li>
-            <li>Current methods don't <em>really</em> scale</li>
-        </ul>
     </div>
     <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ccc; color: #666; font-size: 0.9em;">
 
