@@ -14,7 +14,7 @@
             color: #333;
             background: #fff;
         }
-        
+
         h1 {
             color: #000;
             border-bottom: 2px solid #333;
@@ -22,7 +22,7 @@
             margin-bottom: 20px;
             font-size: 1.8em;
         }
-        
+
         h2 {
             color: #000;
             margin-top: 30px;
@@ -31,7 +31,7 @@
             border-bottom: 1px solid #ccc;
             padding-bottom: 5px;
         }
-        
+
         h3 {
             color: #333;
             margin-top: 20px;
@@ -39,96 +39,96 @@
             font-size: 1.1em;
             font-weight: bold;
         }
-        
+
         .header-info {
             background: #f5f5f5;
             padding: 15px;
             margin-bottom: 20px;
             border-left: 3px solid #666;
         }
-        
+
         .header-info p {
             margin: 5px 0;
         }
-        
+
         .course-structure {
             margin: 20px 0;
         }
-        
+
         .course-structure ol {
             margin-left: 20px;
         }
-        
+
         .course-structure li {
             margin: 10px 0;
         }
-        
+
         .nested-list {
             margin-top: 10px;
             margin-left: 20px;
             list-style-type: lower-roman;
         }
-        
+
         .timeline {
             background: #f9f9f9;
             padding: 15px;
             margin: 20px 0;
             border-radius: 5px;
         }
-        
+
         .grading-table {
             width: 100%;
             margin: 20px 0;
             border-collapse: collapse;
         }
-        
+
         .grading-table th, .grading-table td {
             padding: 10px;
             text-align: left;
             border: 1px solid #ddd;
         }
-        
+
         .grading-table th {
             background: #f0f0f0;
             font-weight: bold;
         }
-        
+
         .grading-table tr:hover {
             background: #f5f5f5;
         }
-        
+
         a {
             color: #0066cc;
             text-decoration: none;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
-        
+
         .date-revised {
             font-style: italic;
             color: #666;
             margin-bottom: 15px;
         }
-        
+
         .emphasis {
             font-weight: bold;
             color: #000;
         }
-        
+
         .section {
             margin: 30px 0;
         }
-        
+
         ul {
             margin-left: 20px;
         }
-        
+
         li {
             margin: 8px 0;
         }
-        
+
         .project-desc {
             background: #fafafa;
             padding: 15px;
@@ -139,9 +139,9 @@
 </head>
 <body>
     <div class="date-revised">Revised January 2, 2026</div>
-    
+
     <h1>CMPUT 605: GPU Programming for Sparse and Adaptive Networks</h1>
-    
+
     <div class="header-info">
         <p><strong>TERM:</strong> Winter 2026</p>
         <p><strong>TIME:</strong> TBD - two 1:20 minute sessions per week</p>
@@ -151,23 +151,23 @@
 
     <h2>Calendar Description</h2>
     <p>
-        Independent study course focusing on the use of GPGPU techniques to advance sparse neural networks, 
-        evolving network topologies, and streaming learning by leveraging modern GPGPU hardware and developing 
+        Independent study course focusing on the use of GPGPU techniques to advance sparse neural networks,
+        evolving network topologies, and streaming learning by leveraging modern GPGPU hardware and developing
         compiler transformations to further leverage existing infrastructure for these learning paradigms.
     </p>
 
     <h2>Course Description and Goals</h2>
     <p>
-        This course provides an in-depth exploration of GPU programming techniques and their application to 
-        sparse neural networks, adaptive network structures, and streaming learning problems. Students will gain 
-        hands-on experience with CUDA, HIP, and potentially OpenXLA/SPIRV, while developing expertise in GPU 
-        profiling, optimization, and multi-GPU scaling. The course covers the underlying architecture of modern 
-        GPUs, current advances in GPU hardware design, and compiler-based approaches to optimization. We are 
-        specifically interested in learning how GPUs can be used to accelerate sparse neural networks, evolving 
-        topology, and streaming learning. The course bridges theoretical understanding with practical implementation 
+        This course provides an in-depth exploration of GPU programming techniques and their application to
+        sparse neural networks, adaptive network structures, and streaming learning problems. Students will gain
+        hands-on experience with CUDA, HIP, and potentially OpenXLA/SPIRV, while developing expertise in GPU
+        profiling, optimization, and multi-GPU scaling. The course covers the underlying architecture of modern
+        GPUs, current advances in GPU hardware design, and compiler-based approaches to optimization. We are
+        specifically interested in learning how GPUs can be used to accelerate sparse neural networks, evolving
+        topology, and streaming learning. The course bridges theoretical understanding with practical implementation
         through collaborative assignments and a substantial research project.
     </p>
-    
+
     <p>
         By the end of this course, students will be able to:
     </p>
@@ -181,7 +181,7 @@
         <li>Scale implementations to multi-GPU systems</li>
         <li>Design and optimize kernels for non-standard computational patterns</li>
     </ul>
-    
+
     <p>
         <strong>Learning Objectives by Student Background:</strong>
     </p>
@@ -233,7 +233,7 @@
             <li><strong>Day 1 (weekly):</strong> Discussion of the week's research papers</li>
             <li><strong>Day 2 (weekly):</strong> Algorithm implementation progress and technical discussions</li>
         </ul>
-        
+
         <h3>Phase 3 (Mid-February - April 2026)</h3>
         <p>
             Dedicated time for course project development, with bi-weekly progress reviews and implementation refinement.
@@ -241,141 +241,149 @@
     </div>
 
     <h2>Grading Scheme</h2>
-    <table class="grading-table">
-        <thead>
-            <tr>
-                <th>Component</th>
-                <th>Description</th>
-                <th>Weight</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>GPU Programming Assignments</td>
-                <td>Three collaborative assignments in GPU programming (potentially to be integrated into future CMPUT 429 or GPU programming courses)</td>
-                <td>30%</td>
-            </tr>
-            <tr>
-                <td>Paper Discussions & Participation</td>
-                <td>Active participation in weekly paper discussions and class activities</td>
-                <td>30%</td>
-            </tr>
-            <tr>
-                <td>Course Project</td>
-                <td>Research project bridging gaps in streaming learning/RL/useful GPU algorithms or implementations</td>
-                <td>40%</td>
-            </tr>
-        </tbody>
-    </table>
 
-    <h2>Detailed Course Plan</h2>
     <div class="section">
-        <h3>Weeks 1-6: GPU Programming Foundations</h3>
-        <ul>
-            <li>CUDA/HIP programming fundamentals</li>
-            <li>Memory management and optimization techniques</li>
-            <li>Kernel optimization strategies</li>
-            <li>Introduction to GPU profiling tools (NSight, ROCprof)</li>
-            <li>Implementation of common data structures and algorithms</li>
-            <li>Weekly paper discussions on relevant RL topics</li>
-        </ul>
-
-        <h3>Weeks 7-9: Advanced GPU Techniques</h3>
-        <ul>
-            <li>Multi-GPU programming and communication</li>
-            <li>GPU architecture deep dive</li>
-            <li>Review of existing sparse and dynamic networks techniques for GPUs</li>
-        </ul>
-
-        <h3>Weeks 10-14: Project Development</h3>
-        <ul>
-            <li>Project proposal and design</li>
-            <li>Implementation and iterative development</li>
-            <li>Performance analysis and optimization</li>
-            <li>Final presentation and writeup</li>
-        </ul>
-    </div>
-
-    <h2>Key Topics to be Covered</h2>
-    <div class="section">
-        <h3>GPU Programming and Performance Analysis</h3>
-        <ul>
-            <li>CUDA and HIP programming fundamentals</li>
-            <li>GPU architecture: compute units, memory hierarchies, warp schedulers, tensor cores</li>
-            <li>Recent advances in GPU hardware design (Hopper, RDNA3, and beyond)</li>
-            <li>Memory hierarchies and optimization techniques</li>
-            <li>Kernel optimization strategies</li>
-            <li>Warp-level primitives and cooperative groups</li>
-            <li>Profiling tools: NSight Systems, NSight Compute, ROCprof</li>
-            <li>Profiler internals and compiler-based instrumentation approaches</li>
-            <li>Understanding memory access patterns and their performance implications</li>
-            <li>Dynamic parallelism and unified memory</li>
-            <li>Multi-GPU programming and communication (NCCL)</li>
-            <li>Compiler transformations for performance optimization</li>
-        </ul>
-
-        <h3>Hardware-Underexplored Algorithmic Directions</h3>
-        <ul>
-            <li><strong>Sparsity:</strong> Sparse neural networks, structured vs. unstructured sparsity, GPU implementations</li>
-            <li><strong>Dynamic Connectivity:</strong> Networks where connection patterns change during training/inference</li>
-            <li><strong>Evolving Structures:</strong> Neural architectures that grow, shrink, or restructure over time</li>
-            <li><strong>Streaming Learning:</strong> True online learning with batch size = 1, sequential data streams</li>
-            <li>Review of existing research and implementations in these areas</li>
-            <li>Analysis of computational challenges and GPU optimization opportunities</li>
-        </ul>
-
-        <h3>Tools and Infrastructure</h3>
-        <ul>
-            <li>NSight Systems and NSight Compute</li>
-            <li>ROCprof and ROCtracer</li>
-            <li>NVCC (NVIDIA CUDA Compiler) and HIPCC (HIP Compiler)</li>
-            <li>Compiler toolchains and their role in GPU code generation</li>
-            <li>GPU cluster job scheduling (SLURM)</li>
-            <li>Custom kernel development for non-standard operations</li>
-            <li>Exploring portability strategies and bridging the CUDA ecosystem</li>
-        </ul>
-    </div>
-
-    <h2>Project Guidelines</h2>
-    <div class="project-desc">
+        <h3>Assignments (3 Common Algorithms/Concepts) - 30%</h3>
         <p>
-            The course project should demonstrate mastery of GPU programming techniques while contributing 
-            to the fields of sparse neural networks, streaming learning, or adaptive network structures. 
-            Potential project areas include:
+            Common days for implementing basic algorithms. Some discussion around implementing and other fun stuff.
+            Progressively building a deeper understanding of what GPUs are. DS and algorithms course (look this up) -
+            leet GPU stuff.
         </p>
-        <ul>
-            <li>GPU-accelerated implementations of sparse neural network algorithms</li>
-            <li>Optimization of existing frameworks for GPU execution of dynamic or evolving networks</li>
-            <li>Development of GPU-efficient data structures for sparse connectivity patterns</li>
-            <li>Multi-GPU scaling strategies for sparse or adaptive network training</li>
-            <li>Compiler transformations for automatic GPU optimization of sparse learning algorithms</li>
-            <li>Streaming/online learning: Profiling batch size = 1 training; investigating GPU utilization in sequential learning scenarios</li>
-            <li>Benchmarking suites for GPU-accelerated sparse and adaptive networks</li>
-        </ul>
+
+        <h3>Paper Reviews - 30%</h3>
         <p>
-            Projects will be evaluated based on technical depth, innovation, implementation quality, 
-            performance analysis, and the clarity of the final writeup.
+            Structured discussion of papers we know (1 paper a week). If we finish our basics, move to 2 papers per week.
+        </p>
+
+        <h3>Project Proposal - Due February 15</h3>
+        <p>
+            Plan for the rest of the term. Something that bridges gaps in continual learning/RL/etc.
+        </p>
+
+        <h3>Project Deadline (April) - 40%</h3>
+    </div>
+
+
+    <h2>Potential Assignments</h2>
+
+    <div class="section">
+        <h3>1. Parallel Reduction</h3>
+        <p>
+            You will implement a naive reduction and progressively optimize it with shared memory, loop unrolling,
+            and warp-shuffle techniques. Using Nsight Compute and the ROCm Profiler, you will profile each version to analyze warp stalls,
+            occupancy, register usage, and memory throughput. You will write a short profiling summary explaining
+            which optimizations improved performance and why, using specific metrics as evidence.
+        </p>
+        <p>
+            This assignment should provide an opportunity to work with sparse data on GPUs, with emphasis on
+            underlying architecture aids for handling control flow.
+        </p>
+
+        <h3>2. Prefix Scan + Stream Compaction</h3>
+        <p>
+            You will implement an efficient parallel prefix-sum (Blelloch scan) in shared memory and use it to
+            build a full stream-compaction pipeline on the GPU. This assignment teaches memory coalescing,
+            bank-conflict avoidance, and hierarchical parallelism. You will implement both exclusive and inclusive
+            scans, then use them to compact an array (remove zeros or inactives) using scatter. This directly maps
+            to building and maintaining sparse activation vectors and CSR row pointers.
+        </p>
+
+        <h3>3. Sparse Matrix-Vector Multiply (CSR + COO SpMV)</h3>
+        <p>
+            You will implement both COO and CSR SpMV kernels and compare their performance, memory access patterns,
+            divergence behavior, and atomic usage. This includes designing different thread decomposition strategies
+            (thread-per-row, warp-per-row, thread-per-nonzero). You will also implement a basic COO→CSR conversion
+            using prefix sums. This assignment provides a basis for implementing sparse neural network
+            forward/backward passes.
+        </p>
+
+        <h3>4. Persistent Kernels + Global Work Queues</h3>
+        <p>
+            You will build a persistent-threads kernel that stays resident on the GPU and continuously pulls work
+            from a global queue implemented with atomics. This teaches you how to avoid kernel launch overhead and
+            handle asynchronous or streaming workloads. You'll implement task distribution (pop), task creation
+            (push), and termination detection safely under concurrency. This assignment mirrors what real
+            sparse/dynamic NN frameworks must do to process many tiny updates in real time. We could also optionally
+            use this as another chance to get more profiling experience.
         </p>
     </div>
 
-    <h2>Prerequisites</h2>
-    <ul>
-        <li>Strong programming skills in C/C++ or Python</li>
-        <li>Familiarity with machine learning concepts</li>
-        <li>Basic understanding of computer architecture</li>
-        <li>Experience with Linux/Unix environments</li>
-    </ul>
+    <h2>Other Possible Assignments</h2>
 
-    <h2>Resources</h2>
-    <ul>
-        <li>NVIDIA CUDA Programming Guide</li>
-        <li>AMD ROCm Documentation</li>
-        <li>Selected research papers (to be provided)</li>
-        <li>Access to GPU compute cluster</li>
-        <li>Course repository with starter code and examples</li>
-    </ul>
+    <div class="section">
+        <h3>Dynamic Graph Update + Periodic CSR Rebuild</h3>
+        <p>
+            You implement a dynamic adjacency structure where edges can be appended atomically (COO-style), then
+            periodically rebuild a CSR representation using prefix scans and compaction. This teaches how to manage
+            variable-length lists, amortize dynamic updates, and maintain consistency between representations. You
+            will design a chunked, GPU-friendly memory structure for insertions, then build a fast, parallel CSR
+            rebuild pipeline. This assignment is the bridge between static sparse operators and true
+            evolving-connectivity neural networks.
+        </p>
 
+        <h3>Parallel BFS / Frontier Expansion</h3>
+        <p>
+            You will implement a GPU BFS that maintains a frontier queue and processes only active nodes on each
+            iteration. This teaches workload compaction, atomic insertion into a next-level frontier, and handling
+            irregular per-node degrees. You will optimize your BFS using warp-cooperative neighbor processing and
+            compaction to eliminate empty work. This assignment provides deep intuition about divergence, load
+            balance, and irregular memory access patterns—core challenges in sparse and dynamic neural network
+            architectures.
+        </p>
+    </div>
+
+    <h2>Potential Reading List</h2>
+
+    <div class="section">
+        <h3>GPU Related Papers</h3>
+        <ul>
+            <li>Parallel Processing (2nd edition textbook)</li>
+            <li><a href="https://arxiv.org/abs/2507.10789v1">The Blackwell Architecture</a> - A microbenchmarking test on the Blackwell platform to discover architectural characteristics. <a href="https://dl.acm.org/doi/10.1145/3725843.3756041">This paper</a> does a similar thing but for the CUDA cores proper. This could make a useful comparison to the <a href="https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/instruction-set-architectures/amd-instinct-mi300-cdna3-instruction-set-architecture.pdf">MI300A docs</a> and CDNA architecture reference to see what's up.</li>
+        </ul>
+
+        <h3>ML Related Papers</h3>
+        <ul>
+            <li><a href="https://openreview.net/pdf?id=Sv7DazuCn8">The Big World Hypothesis</a> - This is short and worth reading before the class to motivate this direction of work.</li>
+            <li><a href="https://arxiv.org/abs/2410.14606">Streaming Reinforcement Learning Finally Works</a> - Understand what is needed to make streaming algorithms work in RL (step-size adaptation, normalization, etc.).</li>
+            <li><a href="https://arxiv.org/pdf/2102.00554">Sparsity in Deep Learning: Pruning and Growth for Efficient Inference and Training In Neural Networks</a> - I have never read this paper, but at a skim it looks great. The paper is long, but the goal with this is to understand why sparsity is important and what the main algorithms people use. Even just going through the first two sections of this paper would be worth it.</li>
+            <li>I want a paper that demonstrates the importance of network architecture, and how that influences performance, learning efficiency, and generalization. I haven't found one yet, but maybe we can just discuss this idea. The sparsity paper I added may actually suffice for this.</li>
+            <li>The last type of paper I want to look at is a paper that learns the structure of a network online, and discusses why this is important. I don't have a paper in mind, but right now I'm considering <a href="https://arxiv.org/pdf/1607.01097">AdaNet</a>, <a href="https://link.springer.com/chapter/10.1007/978-3-032-05461-6_13">Efficient Architecture Search for Continual Learning</a>, and Neuron-Level Architecture Search for Efficient Model Design.</li>
+        </ul>
+
+        <p>
+            <em>Note:</em> Continuous learning ideas might be a much better focus for paper reading in the course,
+            implementing the system on an actual GPU would be an easier engineering problem and I could dig up
+            papers as required to back it up.
+        </p>
+    </div>
+
+    <h2>Course Topics Overview</h2>
+
+    <div class="section">
+        <h3>CUDA/HIP Programming Systems</h3>
+        <p><strong>Phase 1:</strong> A library of common functions/tools/utilities + GPGPU profiling tools + Multi-GPU versions</p>
+        <ul>
+            <li>Implementing common utilities</li>
+            <li>Implementing common algorithms</li>
+            <li>Fundamentals</li>
+            <li>Memory systems</li>
+            <li>Finding papers? Let's look at some</li>
+            <li>Open XLA backend? SPIRV? JAX?</li>
+        </ul>
+
+        <h3>Sparse Networks Context</h3>
+        <ul>
+            <li>In ML scaling → bigger is not better</li>
+            <li>Scaling doesn't make sense in the current paradigm</li>
+            <li>Squeezing as much as possible out of data</li>
+            <li>Learning the network structure (hardware does not suit it)</li>
+            <li>Build in the biases that make it effective for some problems</li>
+            <li>Build in the specific capture techniques</li>
+            <li>Current methods don't <em>really</em> scale</li>
+        </ul>
+    </div>
     <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ccc; color: #666; font-size: 0.9em;">
+
         <p>Course webpage maintained by the Department of Computing Science, University of Alberta</p>
         <p>For questions or concerns, please contact the course instructor.</p>
     </footer>
